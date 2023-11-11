@@ -13,7 +13,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
     background-color: rgb(10, 1, 10);
 }
 
@@ -118,7 +118,7 @@ section{
     position: absolute;
     text-align: center;
     bottom: 100px;
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.02em;
     color: #ddbef9;
@@ -127,24 +127,35 @@ section{
 
 .introduction{
     background: linear-gradient(rgb(10, 1, 10), #171418dd);
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 input{
-    width: 80%;
+    width: 92%;
     max-width: 400px;
     background-color: transparent;
-    border: 0.2px solid rgb(38, 29, 38);
+    border: 0.6px solid rgb(38, 29, 38);
     outline: none;
     border-radius: 4px;
-    padding: 4px;
+    padding: 6px 2px;
     color: #a7a6a6;
+    font-size: 0.75em;
+    text-align: center;
 }
 
 .input-box{
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+}
+
+@media screen and (max-width: 380px){
+    input{
+        width: 92%;
+        color: #a7a6a6;
+        font-size: 0.7em;
+    }
+    
 }
 
 .intro-container{
@@ -156,19 +167,21 @@ input{
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600px;
 }
 
 .intro-container h1{
     color: #a7a6a6;
     margin-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .intro-container p{
     color: #ddbef9b1;
     font-size: 1.1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.3em;
+
 }
 
 .reason-container{
@@ -313,7 +326,7 @@ input{
 }
 
 .tokenomics span{
-    width: 80%;
+    width: 90%;
     height: 0.5px;
     border: none;
     border-radius: 1px;
@@ -323,6 +336,64 @@ input{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.taxes{
+    width: 90%;
+    max-width: 500px;
+    margin-top: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600px;
+    padding: 2rem;
+    border: 1px solid #ddbef9b1;
+    border-radius: 1rem;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+}
+
+.taxes h2{
+    color: #a7a6a6;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.taxes p{
+    color: #ddbef9b1;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    margin-top: 10px;
+}
+
+.taxes h3{
+    color: #a7a6a6;
+    font-size: 0.8em;
+    line-height: 1.3em;
+    margin-top: 10px;
+}
+
+.taxes small{
+    color: #ddbef9b1;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    margin-top: 10px;
+}
+
+.taxes span{
+    width: 90%;
+    height: 0.5px;
+    border: none;
+    border-radius: 1px;
+    background-color: #a7a6a6;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 .roadmap{
     width: 90%;
@@ -337,7 +408,6 @@ input{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600px;
     padding: 2rem;
-    border: 1px solid #ddbef9b1;
     border-radius: 20px;
     background-color: #180c1cb1;
     box-shadow: 15px 15px 45px rgba(25, 25, 25, 0.25),
@@ -355,7 +425,7 @@ input{
 }
 
 .roadmap p{
-    color: #ddbef9e6;
+    color: #ddbef9a5;
     font-size: 1.1em;
     line-height: 1.5em;
     margin-top: 18px;
@@ -382,9 +452,14 @@ input{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600px;
     padding: 2rem;
-    border: 1px solid #ddbef9b1;
-    border-radius: 1rem;
+    border-radius: 20px;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+    background-color: #180c1cb1;
+    box-shadow: 15px 15px 45px rgba(25, 25, 25, 0.25),
+                10px 10px 50px rgba(24, 24, 24, 0.25),
+                inset 5px 5px 10px rgba(0,0,0,0.5),
+                inset 5px 5px 20px #221227b1,
+                inset -5px -5px 15px rgba(0,0,0,0.75);
 }
 
 .mission h2{
@@ -394,10 +469,61 @@ input{
 }
 
 .mission p{
-    color: #ddbef9e6;
+    color: #ddbef9a6;
     font-size: 1.1em;
     line-height: 1.5em;
     margin-top: 18px;
+}
+
+
+.flyer{
+    width: 80%;
+    max-width: 500px;
+    margin-top: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600px;
+    padding: 2rem;
+    border: 1px solid #ddbef9b1;
+    border-radius: 2rem;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+    background-color: #180c1cb1;
+    box-shadow: 15px 15px 45px rgba(25, 25, 25, 0.25),
+                10px 10px 50px rgba(24, 24, 24, 0.25),
+                inset 5px 5px 10px rgba(0,0,0,0.5),
+                inset 5px 5px 20px #221227b1,
+                inset -5px -5px 15px rgba(0,0,0,0.75);
+    animation: animateBg 6s linear infinite;
+}
+
+
+@keyframes animateBg{
+    0%{filter: hue-rotate(0deg);}
+
+    100%{filter: hue-rotate(360deg);}
+}
+
+.flyer h2{
+    color: #a7a6a6;
+    margin-bottom: 15px;
+    font-size: 2.4em;
+}
+
+.flyer span{
+    width: 60%;
+    height: 0.5px;
+    border: none;
+    border-radius: 1px;
+    background-color: #c35959;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 20px;
 }
 
 
@@ -475,7 +601,7 @@ input{
     max-width: 500px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding: 2rem;
 }
 
